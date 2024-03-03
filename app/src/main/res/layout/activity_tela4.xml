@@ -12,27 +12,75 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="160dp"
         android:fontFamily="serif"
         android:text="Tela-04"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="343dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btback"
         android:layout_width="113dp"
         android:layout_height="57dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="68dp"
         android:text="Voltar"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="593dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnext"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnext"
         android:layout_width="113dp"
         android:layout_height="57dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="71dp"
         android:text="Proximo"
-        tools:layout_editor_absoluteX="241dp"
-        tools:layout_editor_absoluteY="593dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/vermelho3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="Vermelho"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <Button
+        android:id="@+id/amarelo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="Amarelo"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <Button
+        android:id="@+id/azul3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:text="Azul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vermelho3" />
+
+    <Button
+        android:id="@+id/preto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="68dp"
+        android:text="Preto"
+        app:layout_constraintStart_toEndOf="@+id/azul3"
+        app:layout_constraintTop_toBottomOf="@+id/amarelo3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
