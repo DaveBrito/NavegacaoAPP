@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C8497"
+    tools:context=".Tela3">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="154dp"
+        android:layout_height="57dp"
+        android:fontFamily="serif"
+        android:text="Tela-03"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="113dp"
+        android:layout_height="57dp"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+    <Button
+        android:id="@+id/bt_prx"
+        android:layout_width="113dp"
+        android:layout_height="57dp"
+        android:text="Proximo"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="113dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
