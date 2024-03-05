@@ -3,6 +3,7 @@ package com.example.navegacao
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,10 +21,10 @@ class Tela2 : AppCompatActivity() {
         val next: Button = findViewById(R.id.prx)
         val Anterior: Button = findViewById(R.id.backk)
         val mainLayout: ConstraintLayout = findViewById(R.id.main)  // telas
-        val vermelhoButton: Button = findViewById(R.id.vermelho1)    //botao vermelho
-        val pretoButton: Button = findViewById(R.id.preto1)          //botao vermelho 
-        val amareloButton: Button = findViewById(R.id.amarelo1)      //botao amarelo
-        val azulButton: Button = findViewById(R.id.azul1)            //botao azul
+        val vermelhoButton: Button = findViewById(R.id.vermelho)    //botao vermelho
+        val aleatorioButton: Button = findViewById(R.id.aleatorio)          //botao aleatorio
+        val verdeButton: Button = findViewById(R.id.verde)      //botao verde
+        val azulButton: Button = findViewById(R.id.azul)            //botao azul
 
 
 
@@ -33,25 +34,31 @@ class Tela2 : AppCompatActivity() {
             insets
         }
 
-
+        //voltar tela
         Anterior.setOnClickListener{
             BacktoPage()
         }
-
+        //prx tela 
         next.setOnClickListener {
             nextoPage()
         }
+
         azulButton.setOnClickListener {
             changeBackgroundColor(mainLayout, Color.BLUE) // ja fez a definicao da cor direto por aqui
         }
 
-        amareloButton.setOnClickListener {
-            changeBackgroundColor(mainLayout, Color.YELLOW) // ja fez a definicao da cor direto por aqui
+        verdeButton.setOnClickListener {
+            changeBackgroundColor(mainLayout, Color.GREEN) // ja fez a definicao da cor direto por aqui
         }
-
-        pretoButton.setOnClickListener {
-            changeBackgroundColor(mainLayout, Color.BLACK) // ja fez a definicao da cor direto por aqui
-        }
+        //botao com a cor aleatorio
+        aleatorioButton.setOnClickListener(View.OnClickListener { // Gera uma cor aleatória e define como cor de fundo
+            val corAleatoria = Color.rgb(
+                (Math.random() * 256).toInt(),
+                (Math.random() * 256).toInt(),
+                (Math.random() * 256).toInt()
+            )
+            mainLayout.setBackgroundColor(corAleatoria)
+        })
         //funcao para ler o botao vermelho
         vermelhoButton.setOnClickListener {
             changeBackgroundColor(mainLayout, Color.RED) // ja fez a definicao da cor direto por aqui
@@ -60,10 +67,12 @@ class Tela2 : AppCompatActivity() {
 
 
     }
+    //pula para a prx tela
     private fun nextoPage() {
         val tela03 = Intent(this, Tela3::class.java)
         startActivity(tela03)
     }
+    //volta para a Anterior
     private fun BacktoPage() {
         val volta = Intent(this, MainActivity::class.java)
         startActivity(volta)

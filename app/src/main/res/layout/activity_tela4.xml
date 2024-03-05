@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/vermelho3"
+        android:id="@+id/vermelho"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
@@ -56,31 +56,31 @@
         tools:layout_editor_absoluteY="77dp" />
 
     <Button
-        android:id="@+id/amarelo3"
+        android:id="@+id/verde"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="52dp"
-        android:text="Amarelo"
+        android:text="Verde"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="77dp" />
 
     <Button
-        android:id="@+id/azul3"
+        android:id="@+id/azul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginTop="68dp"
         android:text="Azul"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vermelho3" />
+        app:layout_constraintTop_toBottomOf="@+id/vermelho" />
 
     <Button
-        android:id="@+id/preto3"
+        android:id="@+id/aleatorio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="76dp"
         android:layout_marginTop="68dp"
-        android:text="Preto"
-        app:layout_constraintStart_toEndOf="@+id/azul3"
-        app:layout_constraintTop_toBottomOf="@+id/amarelo3" />
+        android:text="Aleatório"
+        app:layout_constraintStart_toEndOf="@+id/azul"
+        app:layout_constraintTop_toBottomOf="@+id/verde" />
 </androidx.constraintlayout.widget.ConstraintLayout>

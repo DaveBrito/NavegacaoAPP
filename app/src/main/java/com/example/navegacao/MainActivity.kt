@@ -3,6 +3,7 @@ package com.example.navegacao
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,9 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         val mainLayout: ConstraintLayout = findViewById(R.id.main)  // telas
         val vermelhoButton: Button = findViewById(R.id.vermelho)    //botao vermelho
-        val pretoButton: Button = findViewById(R.id.preto)          //botao vermelho
+        val aleatorioButton: Button = findViewById(R.id.aleatorio)          //botao vermelho
         val nnext: Button = findViewById(R.id.next)                 // botao de proximo
-        val amareloButton: Button = findViewById(R.id.amarelo)      //botao amarelo
+        val verdeButton: Button = findViewById(R.id.verde)      //botao amarelo
         val azulButton: Button = findViewById(R.id.azul)            //botao azul
 
 
@@ -43,13 +44,18 @@ class MainActivity : AppCompatActivity() {
             changeBackgroundColor(mainLayout, Color.BLUE) // ja fez a definicao da cor direto por aqui
         }
 
-        amareloButton.setOnClickListener {
-            changeBackgroundColor(mainLayout, Color.YELLOW) // ja fez a definicao da cor direto por aqui
+        verdeButton.setOnClickListener {
+            changeBackgroundColor(mainLayout, Color.GREEN) // ja fez a definicao da cor direto por aqui
         }
 
-        pretoButton.setOnClickListener {
-            changeBackgroundColor(mainLayout, Color.BLACK) // ja fez a definicao da cor direto por aqui
-        }
+        aleatorioButton.setOnClickListener(View.OnClickListener { // Gera uma cor aleatória e define como cor de fundo
+            val corAleatoria = Color.rgb(
+                (Math.random() * 256).toInt(),
+                (Math.random() * 256).toInt(),
+                (Math.random() * 256).toInt()
+            )
+            mainLayout.setBackgroundColor(corAleatoria)
+        })
         //funcao para ler o botao vermelho
         vermelhoButton.setOnClickListener {
             changeBackgroundColor(mainLayout, Color.RED) // ja fez a definicao da cor direto por aqui
