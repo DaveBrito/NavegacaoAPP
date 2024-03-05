@@ -7,7 +7,8 @@ Projeto criado com o objetivo de interacão entre janelas, manipulação, altera
 - Em cada tela, temos opções para escolher um cor de fundo da tela do usuário.
 - Avançar ou Retroceder janelas.
 
-[![Texto Alternativo](https://github.com/DaveBrito/NavagacaoAPP/raw/main/assets/113936762/4a5ba6d3-7ce3-467f-bafe-58918c029f17.png?raw=true&s=200)](https://github.com/DaveBrito/NavagacaoAPP/raw/main/assets/113936762/4a5ba6d3-7ce3-467f-bafe-58918c029f17.png)
+![](https://github.com/DaveBrito/NavagacaoAPP/raw/main/assets/113936762/4a5ba6d3-7ce3-467f-bafe-58918c029f17.png)
+
 
 
 
