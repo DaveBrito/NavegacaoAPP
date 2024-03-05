@@ -7,6 +7,9 @@ Projeto criado com o objetivo de interacão entre janelas, manipulação, altera
 - Em cada tela, temos opções para escolher um cor de fundo da tela do usuário.
 - Avançar ou Retroceder janelas.
 
+  ![Screenshot_20240305_153821](https://github.com/DaveBrito/NavagacaoAPP/assets/113936762/4a5ba6d3-7ce3-467f-bafe-58918c029f17)
+
+
 # Tecnologia
 - Android Studio
 
